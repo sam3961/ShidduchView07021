@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="chat"
+            type="shiddush.view.com.mmvsd.model.chat.Messages" />
+
+        <variable
+            name="viewModel"
+            type="shiddush.view.com.mmvsd.ui.chat.ChatViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutHeaderDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/_4sdp"
+        android:visibility="visible">
+
+
+        <TextView
+            android:id="@+id/textViewTimeHeader"
+            style="@style/TextViewCircularMedium"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/rounded_light_gray"
+            android:paddingHorizontal="@dimen/_16sdp"
+            android:paddingVertical="@dimen/_6sdp"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_11ssp" />
+
+
+    </RelativeLayout>
+
+</layout>

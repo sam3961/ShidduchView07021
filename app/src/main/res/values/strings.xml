@@ -1,0 +1,575 @@
+<resources>
+    <string name="app_name">Shidduch View</string>
+    <string name="sub_title">The Video Speed Date App</string>
+
+    <!-- //facebook-->
+    <string name="facebook_app_id" translatable="false">402107743733392</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb402107743733392</string>
+
+    <!-- //FCM-->
+    <string name="default_notification_channel_id" translatable="false">Shidduch View</string>
+    <string name="default_notification_channel_name" translatable="false">The Video Speed Date App</string>
+
+    <!-- TODO: Unicode Symbols - http://www.amp-what.com/unicode/search/left -->
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="log_out">Logout</string>
+
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="yes_small">Yes</string>
+    <string name="no_small">No</string>
+    <string name="ok">OK</string>
+    <string name="msg_token_fmt" translatable="false">%s</string>
+
+
+    <!-- Splash Screen String-->
+    <string name="failure_response">Unable to reach server, try again later!</string>
+    <string name="failure_response_signin">Unable to reach server, please SignIn again!</string>
+    <string name="loading">Loading...</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password"><u>Forgot Password?</u></string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up_title">Sign up</string>
+    <string name="sign_up"><u>&#160;SIGN UP</u></string>
+
+
+    <!-- Forgot password Strings -->
+    <string name="forgot_password_text">Use the email address that\'s associated with your application account.</string>
+    <string name="reset_password" translatable="false">Reset Password</string>
+    <string name="title_forgot_password">Forgot Password</string>
+
+    <!-- Register Strings -->
+    <string name="register">Register</string>
+    <string name="verify_password">Verify Password</string>
+    <string name="registration">Registration</string>
+    <string name="last_name">Last name</string>
+    <string name="first_name">First name</string>
+    <string name="please_enter_first_name">Please enter First name.</string>
+    <string name="please_enter_last_name">Please enter Last name.</string>
+    <string name="please_enter_email">Please enter Email.</string>
+    <string name="please_enter_phone">Please enter Phone no.</string>
+    <string name="please_enter_valid_email">Please enter valid Email.</string>
+    <string name="please_enter_password">Please enter Password.</string>
+    <string name="password_length_error">Password must have minimum 6 characters.</string>
+    <string name="please_enter_something">Please provide notes.</string>
+    <string name="please_enter_confirm_password">Please enter Confirm Password.</string>
+    <string name="confirm_password_not_match">Password and Confirm Password not matched.</string>
+    <string name="please_enter_valid_password">Please enter valid Password.</string>
+    <string name="password_not_match">Password does not matched</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="partnership_text"><u>PARTNERSHIP</u></string>
+    <string name="contact_us_text" translatable="false"><u>CONTACT US</u></string>
+    <string name="endorsements_text"><u>ENDORSEMENTS</u></string>
+    <string name="logout_text"><u>LOGOUT</u></string>
+    <string name="partnership_title">Partnership</string>
+    <string name="contact_us_title" translatable="false">Contact Us</string>
+    <string name="endorsements_title">Endorsements</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sign_in_with_facebook">Sign in with Facebook</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="sign_in_with_email">Sign in with Email</string>
+    <string name="agree_with">Agree with</string>
+    <string name="terms_and_conditions"><u>Terms and Conditions</u></string>
+    <string name="terms_and_conditions_title">Terms and Conditions</string>
+    <string name="i_agree">I Agree</string>
+    <string name="with_other_email">Don\'t have an account?</string>
+    <string name="up"><u>&#160;SIGN UP</u></string>
+    <string name="sign_in_cap"><u>SIGN IN&#160;</u></string>
+    <string name="remember_me">Remember me</string>
+    <string name="ooops">Ooops!</string>
+    <string name="no_match_available">No match available.</string>
+    <string name="date_ended">Date Ended!</string>
+    <string name="date_disconnected">Date Disconnected!</string>
+    <string name="check_internet">No internet connection...</string>
+    <string name="new_user_n_registration_form">NEW USER \nREGISTRATION FORM</string>
+    <!-- <string name="done">DONE &#10095;</string>-->
+    <string name="done">DONE</string>
+    <string name="next">NEXT</string>
+    <!-- <string name="next">NEXT &#10095;  space=&#160;</string>-->
+    <string name="prev">&#10094; PREV</string>
+    <string name="height">Height</string>
+    <string name="d_o_b_age">Date of Birth</string>
+    <string name="name">Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="right_arrow">❯</string>
+    <string name="answer_the_quiz" translatable="false">ANSWER THE QUIZ</string>
+    <string name="not_valid_dob">Selected DOB is not valid!</string>
+    <string name="fb_login_failed">Facebook sign in not performed!</string>
+    <string name="google_login_failed">Google sign in not performed!</string>
+    <string name="app_updated_sucessfully">Update Success</string>
+    <string name="app_updated_failed">Update Failure! Please try again.</string>
+    <string name="downloading">Downloading…</string>
+    <string name="register_yourself">Sign up for an account!</string>
+    <string name="register_yourself_message">The email address that you\'ve entered doesn\'t match any account.</string>
+    <string name="hebrew_text" translatable="false">בס"ד</string>
+    <string name="trouble_logging_in">Trouble Logging In?</string>
+    <string name="reset_email_inst">Enter your email, and we\'ll send you a link to get back into your account.</string>
+    <string name="send_link">Send Login Link</string>
+    <string name="partnership_descriprion">Do you have an idea how we can\nmutually help people find their\nspouses?</string>
+    <string name="email_us">If so, please send us an email to</string>
+    <string name="support_email"><u>supportnetwork@shidduchview.com</u></string>
+    <string name="account_email"><u>accountreconsideration@shidduchview.com</u></string>
+    <string name="endorsement_description">Our goal is to help people find their\nspouses to build a true Jewish\nhome!</string>
+    <string name="endorsement_instruction">To see what the Rabbanim write about us,\nplease visit our website at</string>
+    <string name="www_shidduchview_com"><u>https://shidduchview.com</u></string>
+    <string name="shidduch_view_link">http://www.shidduchview.com/</string>
+    <string name="contactusone">If you have any question or comments, you may\nsend us an email at</string>
+    <string name="contactustwo">Answers to many commonly asked questions\nare available on our website.</string>
+    <string name="clientsupport_email"><u>clientsupport@shidduchview.com</u></string>
+    <string name="gender">Gender</string>
+    <string name="please_select_gender">Please select gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="please_enter_name">Please enter Name.</string>
+    <string name="please_enter_valid_name">Please enter valid Name.</string>
+    <string name="check_your_email">Check your email</string>
+    <string name="email_sent">Email sent out from the google email domain :\nnoreply@shidduchview.com</string>
+    <string name="which_do_you_associate">Which do you associate more with?</string>
+    <string name="matching_questions">Key Matching Questions</string>
+    <string name="submit">Submit</string>
+    <string name="geared_for_forum_people">THIS APP IS GEARED\nFOR FORUM PEOPLE</string>
+    <string name="sorry_did_not_pass_quiz">SORRY YOU DID NOT PASS\nTHE QUIZ</string>
+    <string name="if_you_feel_error">If you feel this message is an error, please email </string>
+    <string name="we_plan_to_make">We plan to make this app available to the public at large very soon. If you feel this message to be in error, please send us an email that includes your phone number to</string>
+    <string name="let_s_go">LET\'S GO!</string>
+    <string name="welcome">Welcome!</string>
+    <string name="overview">How it works</string>
+    <string name="est_by_five">At a set time per day, you can go in 1 video speed date for 5 minutes with someone worldwide.</string>
+    <string name="plus_five">If it\'s mutual, the next time that both of you are logged in at the same time, you\'ll have a 10 min date.</string>
+    <string name="first_text">You can fill out questions and watch videos until the date starts.</string>
+    <string name="second_text">Your \"blind date\" will be selected by an AIM, Artificial Intelligence Matchmaker and 3,2,1 - Enjoy your 5-minute date</string>
+    <string name="third_text">Review the date and choose if you\'d like to go out again.</string>
+    <string name="are_you_a_cohen">Are you a Cohen?</string>
+    <string name="cohen">Cohen</string>
+    <string name="are_you_able_to_marry_cohen">Are you able to marry a Cohen?</string>
+    <string name="sure_to_close_this">Are you sure you want\nto leave from here?</string>
+    <string name="sure_to_exit">Are you sure you want to Exit?</string>
+    <!--<string name="married_woman_covering_hair">Married woman covering hair</string>
+    <string name="hair">hair</string>
+    <string name="baseball_caps_are_fine">Baseball caps are fine</string>
+    <string name="baseball">Baseball</string>
+    <string name="woman_only_wearing_skirts">Woman only wearing skirts</string>
+    <string name="skirts">skirts</string>
+    <string name="pants_are_fine">Pants are fine</string>
+    <string name="pants">Pants</string>
+    <string name="shomer">Shomer</string>
+    <string name="shomer_nageah">Shomer Nageah</string>
+    <string name="hugs_are_ok">Hugs are ok</string>
+    <string name="hugs">Hugs</string>-->
+    <string name="please_select_options">Please select options!</string>
+    <string name="please_signin_again">Please SignIn again!</string>
+    <string name="provide_all_answers">Please provide all answers.</string>
+    <string name="please_agree_terms_and_conditions">Please Agree Terms and Conditions.</string>
+
+    <string name="hebrew_t" translatable="false">ד</string>
+    <string name="hebrew_quotes" translatable="false">\"</string>
+    <string name="hebrew_dt" translatable="false">בס</string>
+    <string name="please_wait">Please Wait...</string>
+    <string name="email_not_found_via_fb">Your Email-Id is not verified by Facebook! \nTry to Sign Up or Sign In.</string>
+
+    <string name="no_i_did_not">2. No, I didn\'t</string>
+    <string name="goes_nlive_in">Date\nBegins\nin</string>
+    <string name="h">h</string>
+    <string name="min">min</string>
+    <string name="sec">sec</string>
+    <string name="training_the_ai">INTRODUCE YOURSELF</string>
+    <string name="youtube_classes_list">YOUTUBE CLASSES LIST</string>
+    <string name="time_zones">LIVE TIME (Eastern Time Zone)</string>
+    <string name="mon_thu">MON - THU</string>
+    <string name="west_coast">West Coast</string>
+    <string name="east_coast">East Coast</string>
+    <string name="london">London</string>
+    <string name="israel">Israel</string>
+    <string name="sure_to_logout">Are you sure you want to Logout?</string>
+    <string name="youtube_error">There was an error initializing the YouTubePlayer</string>
+    <string name="no_questions_available">No questions available!</string>
+    <string name="unable_to_load">Sorry : Unable to load!</string>
+    <string name="did_you_enjoy_yourself">Did you enjoy yourself?</string>
+    <string name="_1_yes_i_would_like_to_see_them_again">1. Yes, I would like to see them again</string>
+    <string name="_2_no_i_didn_t">2. No, I didn\'t</string>
+    <string name="to_you_how_did_they_seem">To you, how did they seem?</string>
+    <string name="pleasant">Pleasant</string>
+    <string name="religious">Marriage Focused</string>
+    <string name="attractive">Attractive</string>
+    <string name="add_notes">Add notes</string>
+    <string name="request_live_shadchan">Request live shadchan</string>
+    <string name="please_review_the_date">Please review the date.</string>
+    <string name="sorry">Sorry!</string>
+    <string name="sorry_no_match_availiable_for_today">Sorry :( no match available at this time</string>
+    <string name="sorry_no_match_availiable">Sorry no match available &#128577;\n\nAttendance fluctuates &#128200;\n\nHere is a priority match pass &#128107;\n\nLooking forward to your wedding &#128578;</string>
+    <string name="no_match_inst">Attendance fluctuates between the number of men and women at this time. As a token of appreciation for participating, we will provide a \"priority matching pass\" for you the next time you are logged in!\n\nMay God bless you with all your heart desires.\n\nMay you find your spouse soon!</string>
+    <string name="title_activity_intro_video">IntroVideoActivity</string>
+    <string name="we_record_all_dates_for_quality_assurance">WE RECORD\nALL DATES\nFOR QUALITY ASSURANCE</string>
+    <string name="intro_inst1">If some one acts inappropriately / nudity please flag the video!</string>
+    <string name="intro_inst2">We will review and we send to the police.</string>
+    <string name="try_again">Try Again</string>
+    <string name="select_valid_dob">Please select valid Date of Birth.</string>
+    <string name="please_select_dob">Please select Date of Birth.</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="no_youtube_links_available">No Youtube Classes List Available!</string>
+    <string name="retry">Retry</string>
+    <string name="request_more">Request More</string>
+    <string name="click_here">Click Here</string>
+    <string name="sunday_friday"><![CDATA[Sunday]]></string>
+    <string name="monday_thursday"><![CDATA[Monday & Thursday]]></string>
+    <string name="tuesday_wednesday"><![CDATA[Tuesday & Wednesday]]></string>
+    <string name="_02_30_pm">02:30 pm</string>
+    <string name="_05_30_pm">05:30 pm</string>
+    <string name="_09_30_pm">09:30 pm</string>
+    <string name="sure_to_end_call">Are you sure you want to leave the call?</string>
+
+    <string name="title_settings_dialog">Permissions Required</string>
+    <string name="rationale_video_app">This app needs access to your camera and mic to make video calls</string>
+    <string name="rationale_storage_app">This app needs access to your storage to upload file</string>
+    <string name="rationale_ask_again">This app may not work correctly without the requested permissions. Open the app settings screen to modify app permissions.</string>
+    <string name="setting">Settings</string>
+    <string name="cancel">Cancel</string>
+    <string name="please_select_review">Please tell us about your date!</string>
+    <string name="please_give_rating_for_pleasant">Please rate pleasantness of your date!</string>
+    <string name="please_give_rating_for_attractive">Please rate attractiveness of your date!</string>
+    <string name="please_give_rating_for_religious">Please rate marriage focused of your date!</string>
+    <string name="positive_review_great">Great!</string>
+    <string name="positive_review">If the other person says \“Yes\” as well,\nnext time you\’re both logged in you\’ll\ngo out for an additional 5 min.\n\n2nd Dates are 10 min,\n3rd dates are 15 min, etc.</string>
+    <string name="if_person_say">If the other person says</string>
+    <string name="person_yes">\“Yes\”</string>
+    <string name="additional_five_min">additional 5 min</string>
+    <string name="negative_review_okay">Okay</string>
+    <string name="negative_review">Ok, May you have better results next time.\nFor more accurate matches, please continue\nfilling out the Introduce Yourself questions!</string>
+    <string name="next_time">next time</string>
+    <string name="train_the_ai_ques">Introduce Yourself questions!</string>
+    <string name="thank_you">Thank You!</string>
+    <string name="your_match_left_the_call">Your match left the call.</string>
+    <string name="your_match_drop_call">Click the \u0022Rejoin\u0022 button to reconnect.</string>
+    <string name="time_is_ended">Please complete the review.</string>
+
+    <!-- Application UI -->
+    <string name="title_activity_main">Classy Taxi</string>
+    <string name="tab_text_home">Home</string>
+    <string name="tab_text_premium">Premium</string>
+    <string name="tab_text_settings">Settings</string>
+    <string name="sign_out">Sign out</string>
+    <string name="sign_in_in">Sign in</string>
+    <string name="no_basic_content">Loading basic content</string>
+    <string name="no_premium_content">Loading premium content</string>
+    <string name="refresh_menu_text">Refresh</string>
+
+    <!-- Minor subscription notices -->
+    <string name="grace_period_message">Something’s wrong with your subscription, but you’ve still got access during a temporary grace period. Tap to fix it.</string>
+    <string name="restore_message_with_date">Your subscription is canceled and will expire on %1$s. Tap to restore your subscription.</string>
+
+    <!-- Different account is using subscription -->
+    <string name="transfer_message">Wrong taxi? A different account is already using your subscription, but you can transfer your subscription to this account.</string>
+    <string name="transfer_message_with_sku">Wrong taxi? A different account is already using your %1$s subscription, but you can transfer your subscription to this account.</string>
+    <string name="transfer_message_with_two_skus">Wrong taxi? A different account is already using your %1$s and %2$s subscriptions, but you can transfer your subscriptions to this account.</string>
+    <string name="transfer_button_text">Transfer</string>
+
+    <!-- Account hold -->
+    <string name="account_hold_message">Classy Taxi is stuck! Your account is on hold because there’s a problem with your payment method. Update your payment method or add a new one to restore your subscription.</string>
+    <string name="fix_button_text">Manage payment methods</string>
+
+    <!-- Active subscriptions -->
+    <string name="premium_message">You have a Premium subscription</string>
+    <string name="basic_message">You have a Basic subscription</string>
+    <string name="basic_content_text">Welcome to the basic classy taxi, driving through the peaceful cool of the night.</string>
+    <string name="premium_content_text">Welcome to the premium space taxi, flying through the endless possibilities of space.</string>
+
+    <!-- Paywall -->
+    <string name="paywall_message">Subscribe to a Basic or Premium plan</string>
+    <string name="premium_paywall_message">You need to subscribe to a Premium plan</string>
+
+    <!-- Upgrade -->
+    <string name="premium_upgrade_message">You currently have a Basic plan. Upgrade to enjoy the benefits of the Premium plan.</string>
+    <string name="upgrade_button_text">Upgrade</string>
+
+    <!-- Manage subscriptions -->
+    <string name="manage_subscription_label">Manage subscriptions</string>
+    <string name="manage_subscription_message">Manage your subscription on Google Play.</string>
+    <string name="google_play_subscriptions">Google Play Subscriptions</string>
+
+    <!-- Subscription options -->
+    <string name="subscription_options_label">Subscription options</string>
+    <string name="basic_button_text">Basic</string>
+    <string name="premium_button_text">Premium</string>
+    <string name="subscription_option_basic_message">Basic plan</string>
+    <string name="subscription_option_basic_message_current">Basic plan (current)</string>
+    <string name="subscription_option_basic_message_account_hold">Basic plan (on hold)</string>
+    <string name="subscription_option_basic_message_grace_period">Basic plan (payment issue)</string>
+    <string name="subscription_option_basic_message_restore">Basic plan (canceled)</string>
+    <string name="subscription_option_premium_message">Premium plan</string>
+    <string name="subscription_option_premium_message_current">Premium plan (current)</string>
+    <string name="subscription_option_premium_message_account_hold">Premium plan (on hold)</string>
+    <string name="subscription_option_premium_message_grace_period">Premium plan (payment issue)</string>
+    <string name="subscription_option_premium_message_restore">Premium plan (canceled)</string>
+    <string name="session_expired">Your session is expired please SignIn again.</string>
+    <string name="return_to_home">Return To Home</string>
+    <string name="_05_00">05:00</string>
+    <string name="subscribe">SUBSCRIBE</string>
+    <string name="looking_forward_to_your_wedding">Looking forward to your wedding!</string>
+    <string name="the_platform"><![CDATA[The platform is STRICTLY CLEAN & FOR MARRIAGE PURPOSES ONLY.]]></string>
+    <string name="date_app">Video Date App</string>
+    <string name="the_matchmaker_system">The matchmaker system</string>
+    <string name="and_the_video_dates">The Video Dates</string>
+    <string name="classes">Classes</string>
+    <string name="access_includes">Access includes:</string>
+    <string name="we_offer">We offer</string>
+    <string name="trial">trial.</string>
+    <string name="the_cost_is">The cost is</string>
+    <string name="per_month">per month.</string>
+    <string name="you_may">You may</string>
+    <string name="at_any_time">at any time</string>
+    <string name="free">/ FREE</string>
+    <string name="days">days</string>
+    <string name="_18">$ 18</string>
+    <string name="agree_continue"><![CDATA[Agree & Continue]]></string>
+    <string name="welcome_to">Welcome to</string>
+    <string name="privacy_policy">Read our Privacy Policy.</string>
+    <string name="privacy_policy_click">Privacy Policy</string>
+    <string name="terms_cond"><![CDATA[Tap “Agree & Continue” to\naccept the Terms of Service]]></string>
+    <string name="terms_cond_click">Terms of Service</string>
+    <string name="session_expire">Your Session Expired</string>
+    <string name="please_login_again">Please Login Again.</string>
+    <string name="now_loading">Now Loading...</string>
+
+    <string name="what_do_you_associate_more_with">What do you associate more with?</string>
+    <string name="kosher">Kosher</string>
+    <string name="keeping_kosher">Keeping Kosher</string>
+    <string name="not_keeping_kosher">Not Keeping Kosher</string>
+    <string name="shabbos">Shabbos</string>
+    <string name="keeping_shabbos">Keeping Shabbos</string>
+    <string name="not_keeping_shabbos">Not Keeping Shabbos</string>
+    <string name="tefillin">Tefillin</string>
+    <string name="men_wearing_tefillin">Men Wearing Tefillin</string>
+    <string name="men_not_wearing_tefillin">Men Not Wearing Tefillin</string>
+    <string name="wearing_tefillin">Wearing Tefillin</string>
+    <string name="not_wearing_tefillin">Not Wearing Tefillin</string>
+    <string name="find_wifi">Please find better reception or wifi</string>
+    <string name="good_job">You\'re good for now!</string>
+    <string name="update">Update</string>
+    <string name="update_app">Please update your app to the latest version</string>
+    <string name="advance_matching">Continue to the next level of Advanced Matching</string>
+    <string name="advance_matching_youtube">Continue to the next level of Youtube Classes</string>
+    <string name="intro_tool_tip">Here you will be presented with the set of questions. Answer as many as you can, so that we could find a perfect match for you :)</string>
+    <string name="video_tool_tip">Here you will be presented with the set of dating videos. Watch them to be confident and ready for a surprise date :)</string>
+    <string name="timezone_tool_tip">These are the times when the live video date will happen with your perfect online match. The timer at top of screen shows the remaining time for live date. We expect you to be online at all those times. :)</string>
+    <string name="skip">SKIP</string>
+    <string name="error_launching_purchase_flow">Error launching purchase flow. Another async operation in progress.</string>
+    <string name="purchase_fail">Purchase fail.</string>
+
+    <string name="choose_an_option">Choose an option:</string>
+    <string name="block">Block</string>
+    <string name="report">Report</string>
+    <string name="end_call">End Call</string>
+    <string name="are_you_sure_to_block">Are you sure you want to block the user and end call?</string>
+    <string name="why_do_you_want_to_report_this_user">Why do you want to report this user?</string>
+    <string name="why_do_you_want_to_end_this_call">Why do you want to end this call?</string>
+    <string name="why_do_you_want_to_reject_this_call">Why do you want to reject the call?</string>
+    <string name="why_do_you_missed_this_call">Why do you missed the call?</string>
+    <string name="enter_reason">Enter Reason</string>
+    <string name="enter_reason_here">Please enter reason here.</string>
+    <string name="please_enter_reason">Please enter reason.</string>
+    <string name="have_accept_the_call">You have $ seconds to accept the call</string>
+    <string name="you_have">You have</string>
+    <string name="seconds_to_accept_call">seconds to accept the call</string>
+    <string name="you_have_been_matched_with">You have been matched with</string>
+    <string name="compatibility_rating">Compatibility Rating</string>
+    <string name="reject">Reject</string>
+    <string name="accept">Accept</string>
+    <string name="answer_in_common">Answers in common</string>
+    <string name="marriage_purposes_only">This platform is strictly clean and for marriage purposes only!</string>
+    <string name="agree_eula">Agree to the EULA and Enter Date:</string>
+    <string name="and_eula">and EULA</string>
+    <string name="eula">EULA</string>
+    <string name="you_missed_the_call">You missed the call.</string>
+    <string name="did_not_accept_the_call">did not respond to the call.</string>
+    <string name="did_not_accept_call">did not accept the call.</string>
+    <string name="is_currently_unavailable">is currently unavailable at this time, please try again later...</string>
+    <string name="renew_cancellation">Please <b>\"Restore\"</b> your cancellation from play store to continue with the application.</string>
+    <string name="price_changed">Price changed, please check at play store.</string>
+    <string name="payment_pending">Your app subscription payment is pending, please check at play store.</string>
+    <string name="highlight">When this countdown finishes,the system will match who ever is online at that time with</string>
+    <string name="highlight_1">When this countdown finishes, the system will match who ever is online at that time with their best possible match to have a video date. As attendance fluctuates daily,\n<font color='#ffa008'>A DATE IS NOT GUARANTEED !</font></string>
+    <string name="highlight_2_title">The more questions to answer:</string>
+    <string name="highlight_2">The more questions you answer:\n<font color='#ffa008'>1. The more accurate your match will be.\n2. The more likely you\'ll have a date.\n3. Unsure how to answer, press skip.</font></string>
+    <string name="highlight_3">You can watch <font color='#ffa008'>helpful videos</font> until your date starts.</string>
+    <string name="highlight_4">This is the weekly date schedule. <font color='#ffa008'>Dates only occur at these times. IMPORTANT NOTE</font> you must be logged in before these times.</string>
+    <string name="highlight_5">Questions or comments? Want to submit questions for the matching? Have a video to suggest for the class list?</string>
+
+    <string name="highlight_subscription_1">Lorem ipsum dolor sit amet, consectetur adipiscing.\n<font color='#ffa008'>Integer senectus sagittis.</font></string>
+    <string name="highlight_subscription_2">Lorem ipsum dolor sit amet, <font color='#ffa008'>consectetur adipiscing.</font></string>
+    <string name="highlight_subscription_3"><font color='#ffa008'>Lorem ipsum dolor sit amet,</font> consectetur adipiscing.\nInteger senectus sagittis.</string>
+
+    <string name="highlight_match_step_1">Lorem ipsum dolor sit amet, consectetur adipiscing.\nInteger senectus sagittis.</string>
+    <string name="highlight_match_step_2">Lorem ipsum dolor sit amet, consectetur adipiscing.\nInteger senectus sagittis.</string>
+    <string name="highlight_match_step_3">Lorem ipsum dolor sit amet, consectetur adipiscing.\nInteger senectus sagittis.</string>
+    <string name="highlight_match_step_4">Lorem ipsum dolor sit amet, consectetur adipiscing.\nInteger senectus sagittis.</string>
+
+    <string name="highlight_review_step_1">Lorem ipsum dolor sit amet, consectetur adipiscing.\nInteger senectus sagittis.</string>
+    <string name="highlight_review_step_2">Lorem ipsum dolor sit amet, consectetur adipiscing.\nInteger senectus sagittis.</string>
+    <string name="highlight_review_step_3">Lorem ipsum dolor sit amet, consectetur adipiscing.\nInteger senectus sagittis.</string>
+    <string name="highlight_review_step_4">Lorem ipsum dolor sit amet, consectetur adipiscing.\nInteger senectus sagittis.</string>
+    <string name="highlight_review_step_5">Lorem ipsum dolor sit amet, consectetur adipiscing.\nInteger senectus sagittis.</string>
+    <string name="highlight_review_step_6">Lorem ipsum dolor sit amet, consectetur adipiscing.\nInteger senectus sagittis.</string>
+    <string name="review_step_6_text_message">This Platform is strictly clean and for marriage purposes only!</string>
+    <string name="review_step_3_text_message">you have <font color='red'>14</font> seconds to accept the call</string>
+    <string name="unavailable_for_tonight">Unavailable for tonight</string>
+    <string name="alarm_screen_msg">The more questions you answer the more likely you\'ll have a date</string>
+    <string name="date_is_not_guaranteed">A date is <font color='#ff9800'>NOT Guaranteed.</font></string>
+    <string name="join">JOIN</string>
+    <string name="date_matching_is_in_5_minutes">Date matching is in 2 minutes</string>
+
+    <string name="whats_your_avalability">What\'s your Availablity?</string>
+    <string name="all_times">All Times</string>
+    <string name="early_times">Early Times</string>
+    <string name="specific_times">Specific Times</string>
+    <string name="specific_times_u_r_availble_at">Specific times you\'re available (EST)</string>
+    <string name="this_week">This Week</string>
+    <string name="next_week">Next Week</string>
+    <string name="sunday">Sunday</string>
+    <string name="special_offer">SPECIAL OFFER</string>
+    <string name="subscribe_now">Subscribe now and get 7 days \nFREE trial</string>
+    <string name="cancel_anytime">Cancel anytime</string>
+    <string name="rate_shidduch">Shidduch View Ratings</string>
+    <string name="our_goal">Our goal is to make happy healthy marriages.\nPlease assist and write a review : )</string>
+    <string name="no_thanks">No, Thanks</string>
+    <string name="rate_now">Rate now</string>
+    <string name="phone">Phone Number</string>
+    <string name="date_start_momentarily">Be\"h your Date \nWill start momentarily.</string>
+    <string name="date_reconnect_momentarily">Be\"h reconnect call\nWill start momentarily.</string>
+    <string name="sure_reject_call">Are you sure you want to reject this call?</string>
+    <string name="another_call">Please note: You will not get another call for today.</string>
+    <string name="prepared_for_date">Prepared for Date</string>
+    <string name="marriage_minded">Marriage Minded</string>
+    <string name="marriage_focused">Marriage Focused</string>
+    <string name="try_again_to_reconnect">Try again to reconnect a call</string>
+    <string name="wants_to_connect">wants to reconnect on previous disconnect call. Do you want to join again?</string>
+    <string name="reconnect_call">Reconnect the call</string>
+    <string name="reconnect_message">No worry, somethings went wrong with your last call, still you can join the call by click here or Drop call button at the bottom of screen</string>
+    <string name="drop_call">Drop Call</string>
+    <string name="rejoin_call">Rejoin Call</string>
+    <string name="went_wrong_with_previous_call">Ohh! something went wrong with your last call. Do you want to reconnect the call?</string>
+    <string name="no_internet">No Internet Connection</string>
+    <string name="slow_internet">Slow Internet Connection</string>
+    <string name="please_check_internet">The internet connection appears to be offline.</string>
+    <string name="please_check_slow_internet">The internet connection appears to be very slow.</string>
+    <string name="next_possible_date">Next Possible Date</string>
+    <string name="login">Login</string>
+    <string name="sign_up_small">Sign up</string>
+    <string name="contact_us">Contact us</string>
+    <string name="contact_us_underline"><u>Contact us</u></string>
+    <string name="partnership">Partnership</string>
+    <string name="partnership_underline"><u>Partnership</u></string>
+    <string name="endorsements">ENDORSEMENTS</string>
+    <string name="endorsements_underline"><u>ENDORSEMENTS</u></string>
+    <string name="add_phone_number">Add Phone Number</string>
+    <string name="order_to_schedule">In Order to schedule Call in advance and get text message notification you must need to add your phone number</string>
+    <string name="add">Add</string>
+    <string name="enter_phone_no">Enter phone no #</string>
+    <string name="don_t_close_the_app">Don\'t close the app</string>
+    <string name="searching_for_a_match">Searching for a Match.</string>
+    <string name="if_its_yes"><b>If it\'s a mutual Yes,</b> you\'ll receive a text with the time for the next date.</string>
+    <string name="enter_name">Enter name</string>
+    <string name="select_dob">Select date of birth</string>
+    <string name="enter_email">Enter email</string>
+    <string name="enter_password">Enter password</string>
+    <string name="enter_confirm_password">Enter confirm password</string>
+    <string name="reject_one_time">Reject User this One Time</string>
+    <string name="reject_permanent">Reject User Permanently</string>
+    <string name="are_you_sure_you_want_to_reject">Are you sure you want to reject\nthis user?</string>
+    <string name="please_note_you_will_never_be_matched">Please note: You will never be matched with this user again. You will Not recieve another match today.</string>
+    <string name="not_receive_another_match_for_today">Please note: you will not receive another match for today.</string>
+    <string name="select">Select</string>
+    <string name="would_you_like_to_go_out_with_this_user">Would you like to go out with\nMale again</string>
+    <string name="compatabilty">Compatibility</string>
+    <string name="rejoin_call_now">Rejoin Call Now</string>
+    <string name="both_mutual_yes">You Both Mutually Said Yes</string>
+    <string name="not_available_at_time">not available at this time</string>
+    <string name="not_respond_to_call">does not responded to this call.</string>
+    <string name="rejoin_date">Rejoin Date</string>
+    <string name="rejoin_date_between_time">Rejoin &amp; Date again Features are available anytime between\n6AM - 11PM in Your Local Time Zone.</string>
+    <string name="previous_dates">Previous Date/s</string>
+    <string name="previous_date">Previous Date</string>
+    <string name="no_rejoin_date">No Rejoin Date</string>
+    <string name="rejoin">Rejoin</string>
+    <string name="hint_rejoin">Click the \u0022 ? \u0022 to understand what this box is for.</string>
+    <string name="smart_look_key">5025bb1fbd34e6022d361fcc78d5e05a90bca295</string>
+
+
+    <string name="note_1">Dress Appropriately..</string>
+    <string name="note_2">Give proper attention..</string>
+    <string name="note_3">Verify Stable internet connection..</string>
+    <string name="note_4">Don’t change Internet Type..</string>
+    <string name="note_5">Be seated up right..</string>
+    <string name="note_6">No Driving..</string>
+    <string name="note_7">Dating Coaches Available.</string>
+    <string name="note_8">Disconnected? LOOK for REJOIN..</string>
+    <string name="note_9">Don’t connect Bluetooth during the date..\nThis may cause connectivity issues..</string>
+    <string name="note_10">Respect &amp; Complete the FULL time..\nYou will be Banned otherwise.</string>
+    <string name="note_11">Avoid Light/Sun behind you..</string>
+    <string name="note_12">Remember: Strictly Clean..</string>
+    <string name="why_remove_user">Why want to remove this user from the rejoin date list?</string>
+    <string name="str_continue">Continue</string>
+    <string name="upload">Upload</string>
+    <string name="upload_resume">Upload\nResume</string>
+    <string name="upload_resume_recommended">Upload Resume</string>
+    <string name="recommended">(Recommended)</string>
+    <string name="upload_pic">Upload\nPic</string>
+    <string name="promo_code">Promo Code</string>
+    <string name="enter_promo_code">Enter Promo code</string>
+    <string name="upload_here">Upload here</string>
+    <string name="app_tour">App Tour</string>
+    <string name="channel_id">default</string>
+    <string name="channel_name">Internet Speed Notification</string>
+    <string name="channel_description">Network Speed Notification</string>
+    <string name="rejoin_alert_window">The “Rejoin” - button bellow are calls that have taken place but have been disconnected or that have not completed their full date time. This feature allows you to reconnect with that person as part of that same date.\nThe “Date again” - button bellow are calls that have been completed where you and your match reviewed ‘Yes’ mutually to go out again &#128578;. When You click It, (available anytime between 6AM-11PM ) it will send the other person a notification to allow them to 1)Accept the call now 2)Try again at a later time/day 3)Permanently Reject this person.</string>
+    <string name="resume_alert_window">The Resume and Pic you upload will NOT be shown to any of your matches, it is used solely by Shidduch View and our experts to help with the matchmaking</string>
+    <string name="try_at_a_later_time_day">Try at a later Time/Day</string>
+    <string name="permanently_reject_user">Permanently Reject User</string>
+    <string name="currently_unavailable">Currently unavailable</string>
+    <string name="permanent_reject">Permanent Reject</string>
+    <string name="donate">Donate</string>
+    <string name="another_time_be_h">Another Time be\"H</string>
+    <string name="type_in_your_message">Type here...</string>
+    <string name="select_option">Select Option</string>
+    <string name="camera">Camera</string>
+    <string name="document">Document</string>
+    <string name="photo_library">Photo Library</string>
+    <string name="empty_message">Please enter message</string>
+    <string name="chooser_title">Select Application</string>
+    <string name="downlaoding">Downloading...</string>
+    <string name="storage_camera_permission">Without camera and storage permissions the app is unable to send and capture image.So please allow this permission</string>
+    <string name="permission">Permission</string>
+    <string name="storage_permission">Without storage permissions the app is unable to send documents.So please allow this permission</string>
+    <string name="rejoin_continue_dating">REJOIN: CONTINUE DATING</string>
+    <string name="best_match_new_matches">BEST MATCH - NEW MATCHES</string>
+    <string name="next_event_nstarts_in">Next Event\nStarts in</string>
+    <string name="answers_in_common">Answers in common</string>
+
+
+    <string-array name="intro_notes">
+        <item>@string/note_1</item>
+        <item>@string/note_3</item>
+        <item>@string/note_5</item>
+        <item>@string/note_7</item>
+        <item>@string/note_9</item>
+        <item>@string/note_11</item>
+    </string-array>
+    <string-array name="intro_notes_1">
+        <item>@string/note_2</item>
+        <item>@string/note_4</item>
+        <item>@string/note_6</item>
+        <item>@string/note_8</item>
+        <item>@string/note_10</item>
+        <item>@string/note_12</item>
+    </string-array>
+
+</resources>

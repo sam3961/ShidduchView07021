@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="trainingTheAIData"
+            type="shiddush.view.com.mmvsd.model.waitingscreenmodels.TrainingTheAIData" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/shadow_r_24_white"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/space_10"
+            android:padding="@dimen/space_12">
+
+            <TextView
+                android:id="@+id/tvForthQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="@dimen/space_14"
+                android:layout_marginEnd="@dimen/space_14"
+                android:layout_marginBottom="@dimen/space_2"
+                android:layout_marginTop="@dimen/space_6"
+                android:fontFamily="@font/avenirnextltpro_demi"
+                android:gravity="start"
+                android:text="Please Choose the 1 you prefer:"
+                android:textColor="@color/colorDarkGrayText"
+                android:textSize="@dimen/text_size_16" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_10"
+                android:layout_marginBottom="@dimen/space_10"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/space_30"
+                android:paddingRight="@dimen/space_30">
+
+                <TextView
+                    android:id="@+id/oneOption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/curved_shape_orange_border"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/space_30"
+                    android:paddingTop="@dimen/space_14"
+                    android:paddingEnd="@dimen/space_30"
+                    android:paddingBottom="@dimen/space_14"
+                    android:text="1. Choice 1"
+                    android:textColor="@color/colorDarkGrayText"
+                    android:textSize="@dimen/text_size_13" />
+
+                <TextView
+                    android:id="@+id/twoOption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:background="@drawable/curved_shape_orange_border"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/space_30"
+                    android:paddingTop="@dimen/space_14"
+                    android:paddingEnd="@dimen/space_30"
+                    android:paddingBottom="@dimen/space_14"
+                    android:text="2. Choice 2"
+                    android:textColor="@color/colorDarkGrayText"
+                    android:textSize="@dimen/text_size_13" />
+
+                <TextView
+                    android:id="@+id/threeOption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_16"
+                    android:background="@drawable/curved_shape_orange_border"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/space_30"
+                    android:paddingTop="@dimen/space_16"
+                    android:paddingEnd="@dimen/space_30"
+                    android:paddingBottom="@dimen/space_16"
+                    android:text="3. Choice 2"
+                    android:visibility="gone"
+                    android:textColor="@color/colorDarkGrayText"
+                    android:textSize="@dimen/text_size_13" />
+
+                <TextView
+                    android:id="@+id/fourOption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_16"
+                    android:background="@drawable/curved_shape_orange_border"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/space_30"
+                    android:paddingTop="@dimen/space_16"
+                    android:paddingEnd="@dimen/space_30"
+                    android:paddingBottom="@dimen/space_16"
+                    android:text="4. Choice 2"
+                    android:visibility="gone"
+                    android:textColor="@color/colorDarkGrayText"
+                    android:textSize="@dimen/text_size_13" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvSkipQuestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:paddingStart="@dimen/space_35"
+                android:paddingEnd="@dimen/space_54"
+                android:fontFamily="@font/avenirnextltpro_demi"
+                android:gravity="end"
+                android:paddingTop="@dimen/space_2"
+                android:paddingBottom="@dimen/space_2"
+                android:text="@string/skip"
+                android:textColor="@color/text_purple"
+                android:textSize="@dimen/text_size_16" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

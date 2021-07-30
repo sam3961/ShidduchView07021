@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="youtubeLinksData"
+            type="shiddush.view.com.mmvsd.model.waitingscreenmodels.YoutubeLinksData" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingVertical="@dimen/_4sdp"
+        android:orientation="vertical"
+       >
+
+        <ImageView
+            android:id="@+id/imageViewRemove"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_toEndOf="@+id/cvAvatar"
+            android:paddingStart="@dimen/_8sdp"
+            android:paddingEnd="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:src="@drawable/ic_close_white"
+            app:tint="@android:color/darker_gray" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvAvatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/space_4"
+            android:innerRadius="0dp"
+            android:shape="ring"
+            app:cardCornerRadius="@dimen/space_25"
+            app:cardElevation="@dimen/space_4">
+
+            <LinearLayout
+                android:id="@+id/llImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/ivThumbnail"
+                    android:layout_width="@dimen/space_52"
+                    android:layout_height="@dimen/space_52"
+                    android:padding="@dimen/_2sdp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_male"
+                    app:riv_corner_radius_bottom_left="@dimen/space_8"
+                    app:riv_corner_radius_bottom_right="@dimen/space_8"
+                    app:riv_corner_radius_top_left="@dimen/space_8"
+                    app:riv_corner_radius_top_right="@dimen/space_8" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cvAvatar"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:id="@+id/llName"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_4"
+                android:ellipsize="end"
+                android:fontFamily="@font/montserrat_regular"
+                android:gravity="center"
+                android:text="TitleTitle"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11ssp" />
+
+            <LinearLayout
+                android:id="@+id/ll_type"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/curved_gradient_dark_purple"
+                android:gravity="center"
+                android:padding="@dimen/_4sdp"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/rlRejoin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:clickable="false"
+                    android:focusable="false">
+
+                    <TextView
+                        android:id="@+id/textViewType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:fontFamily="@font/avenirnextltpro_demi"
+                        android:gravity="center_vertical|center"
+                        android:paddingStart="@dimen/_6sdp"
+                        android:paddingEnd="@dimen/_6sdp"
+                        android:text="Date Again"
+                        android:textColor="@android:color/white"
+                        android:textSize="12dp" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</layout>

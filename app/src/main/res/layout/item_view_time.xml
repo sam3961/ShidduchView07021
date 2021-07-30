@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+    <data>
+
+        <variable
+            name="chat"
+            type="shiddush.view.com.mmvsd.model.chat.Messages" />
+    </data>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="end">
+
+    <TextView
+        android:padding="@dimen/_4sdp"
+        android:id="@+id/tvLastMessage"
+        style="@style/TextViewCircularRegular"
+        android:maxLines="1"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:includeFontPadding="false"
+        android:textColor="@color/colorMediumGray"
+        android:textSize="@dimen/_9sdp" />
+
+</RelativeLayout>
+</layout>

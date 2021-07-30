@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "592956229423",
+    "firebase_url": "https://shidduch-view-8b306.firebaseio.com",
+    "project_id": "shidduch-view-8b306",
+    "storage_bucket": "shidduch-view-8b306.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592956229423:android:ebf5bbee52fcf675",
+        "android_client_info": {
+          "package_name": "shiddush.view.com.mmvsd"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "592956229423-b8pie0rlptjkgl8of7tvvtg03u26lo92.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "shiddush.view.com.mmvsd",
+            "certificate_hash": "727fd1c0d636b777dda0d21793b04828624aff3e"
+          }
+        },
+        {
+          "client_id": "592956229423-f5b6dfbgjfmustrcstbvu30v9du15v28.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "shiddush.view.com.mmvsd",
+            "certificate_hash": "45dfce4b554e5e94644abd046cfb15c9e962b684"
+          }
+        },
+        {
+          "client_id": "592956229423-tciia96hvu74jqrjomv63329dr67ah7s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnb2e5WD3AnIchEkMfAoTU0OGfLNbtLzE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "592956229423-tciia96hvu74jqrjomv63329dr67ah7s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

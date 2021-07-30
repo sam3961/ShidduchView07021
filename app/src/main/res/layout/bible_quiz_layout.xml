@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="bibleQuizData"
+            type="shiddush.view.com.mmvsd.model.signupbiblequiz.SignUpBibleQuizData" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llBibleBack"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/swap_card_shadow_60">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/space_16"
+                android:paddingTop="@dimen/space_10"
+                android:paddingRight="@dimen/space_16"
+                android:paddingBottom="@dimen/space_10">
+
+                <TextView
+                    android:id="@+id/tvQuestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/avenirnextltpro_demi"
+                    android:gravity="center_vertical"
+                    android:text="How many Avos are there?"
+                    android:textColor="@color/colorDarkGrayText"
+                    android:textSize="@dimen/text_size_18" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/space_8"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvOptionOne"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginRight="@dimen/space_16"
+                        android:layout_weight="1"
+                        android:background="@drawable/curved_shape_orange_border"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/space_2"
+                        android:paddingBottom="@dimen/space_2"
+                        android:text="3"
+                        android:textColor="@color/colorDarkGrayText"
+                        android:textSize="@dimen/text_size_18" />
+
+                    <TextView
+                        android:id="@+id/tvOptionQwo"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="@dimen/space_8"
+                        android:layout_marginRight="@dimen/space_8"
+                        android:layout_weight="1"
+                        android:background="@drawable/curved_shape_orange_border"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/space_2"
+                        android:paddingBottom="@dimen/space_2"
+                        android:text="2"
+                        android:textColor="@color/colorDarkGrayText"
+                        android:textSize="@dimen/text_size_18" />
+
+                    <TextView
+                        android:id="@+id/tvOptionThree"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="@dimen/space_16"
+                        android:layout_weight="1"
+                        android:background="@drawable/curved_shape_orange_border"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/space_2"
+                        android:paddingBottom="@dimen/space_2"
+                        android:text="4"
+                        android:textColor="@color/colorDarkGrayText"
+                        android:textSize="@dimen/text_size_18" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

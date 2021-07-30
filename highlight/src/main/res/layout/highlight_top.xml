@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.puder.highlight.internal.HighlightView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/highlight_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_highlight"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/highlight_title"
+            style="@style/HighlightTitle" />
+
+        <TextView
+            android:id="@+id/highlight_description"
+            style="@style/HighlightDescription"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/highlight_button"
+            style="@style/HighlightButton"
+            android:layout_gravity="center"
+            android:background="@drawable/curved_gradient_purple"
+            android:text="@string/default_button_label" />
+
+    </LinearLayout>
+
+
+</org.puder.highlight.internal.HighlightView>

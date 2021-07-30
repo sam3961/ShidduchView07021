@@ -1,0 +1,44 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 29
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 2
+        versionName "1.1"
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation "androidx.appcompat:appcompat:1.1.0"
+}
+
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'SingleDateAndTimePicker'
+    orgName = 'florent37'
+
+    publishedGroupId ='com.github.florent37'
+    libraryName = 'SingleDateAndTimePicker'
+    artifact = 'singledateandtimepicker'
+
+    libraryDescription = 'SingleDateAndTimePicker'
+
+    siteUrl = 'https://github.com/florent37/SingleDateAndTimePicker'
+    gitUrl = 'https://github.com/florent37/SingleDateAndTimePicker.git'
+
+    libraryVersion = "2.2.6"
+
+    developerId = 'florent37'
+    developerName = 'Florent Champigny'
+    developerEmail = 'champigny.florent@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}

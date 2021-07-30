@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+    <!-- android:background="@android:color/transparent"-->
+
+    <RelativeLayout
+        android:id="@+id/rlBackLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/space_12"
+        android:background="@drawable/swap_card_shadow_100">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_14"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:id="@+id/relativelayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/background"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="#303F9F" />
+
+                <ImageView
+                    android:id="@+id/imageViewCancel"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="@dimen/space_4"
+                    android:visibility="gone"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/ic_close" />
+
+                <ImageView
+                    android:id="@+id/cancel_icon_click"
+                    android:layout_width="50dp"
+                    android:visibility="gone"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"/>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/space_8"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="-8dp">
+
+                    <TextView
+                        android:id="@+id/tv_hebru_text_t"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:gravity="center"
+                        android:text="@string/hebrew_t"
+                        android:textColor="@color/hebrew_purple"
+                        android:textSize="@dimen/text_size_24" />
+
+                    <TextView
+                        android:id="@+id/tv_hebru_quotes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:gravity="center"
+                        android:text="@string/hebrew_quotes"
+                        android:textColor="@color/hebrew_purple"
+                        android:textSize="@dimen/text_size_24" />
+
+                    <TextView
+                        android:id="@+id/tv_hebru_text_dt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:gravity="center"
+                        android:text="@string/hebrew_dt"
+                        android:textColor="@color/hebrew_purple"
+                        android:textSize="@dimen/text_size_24" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="@dimen/space_80"
+                android:layout_height="@dimen/space_80"
+                android:layout_below="@+id/relativelayout1"
+                android:layout_centerHorizontal="true"
+
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_clock" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/icon"
+                android:layout_marginTop="@dimen/space_60"
+                android:layout_marginBottom="@dimen/space_4">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/avenirnextltpro_demi"
+                    android:gravity="center"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text="After the Date..."
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/tvMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:gravity="center"
+                    android:layout_below="@+id/title"
+                    android:paddingStart="@dimen/space_16"
+                    android:paddingEnd="@dimen/space_16"
+                    android:text="@string/if_its_yes"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/text_size_13" />
+
+                <LinearLayout
+                    android:id="@+id/ll_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvMessage"
+                    android:layout_marginStart="@dimen/space_8"
+                    android:layout_marginTop="@dimen/space_16"
+                    android:layout_marginEnd="@dimen/space_8"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="64dp"
+                        android:layout_marginTop="@dimen/space_8"
+                        android:background="@drawable/curved_shape_white"
+                        app:cardElevation="@dimen/space_4">
+
+                        <com.hbb20.CountryCodePicker
+                            android:id="@+id/ccPicker"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            app:ccp_defaultPhoneCode="1"
+                            app:ccp_showFlag="false"
+                            app:ccp_showNameCode="false"
+                            app:ccp_textSize="@dimen/text_size_14" />
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <RelativeLayout
+                        android:id="@+id/rl_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_80"
+                        android:background="@drawable/swap_card_shadow_5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textViewMail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/space_10"
+                            android:layout_toEndOf="@+id/imageViewPhone"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:paddingTop="@dimen/space_2"
+                            android:text="@string/phone"
+                            android:textColor="@android:color/darker_gray" />
+
+                        <ImageView
+                            android:id="@+id/imageViewPhone"
+                            android:layout_width="@dimen/space_20"
+                            android:layout_height="@dimen/space_20"
+                            android:layout_below="@+id/textViewMail"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="@dimen/space_8"
+                            android:layout_marginBottom="@dimen/space_6"
+                            android:src="@drawable/phone_icon"
+                            android:tint="@android:color/black" />
+
+
+                        <EditText
+                            android:id="@+id/etPhone"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/space_40"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="@dimen/space_2"
+                            android:layout_marginTop="@dimen/space_6"
+                            android:layout_marginBottom="@dimen/space_4"
+                            android:layout_toEndOf="@+id/imageViewPhone"
+                            android:background="@color/white"
+                            android:digits="0123456789"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:hint="@string/enter_phone_no"
+                            android:inputType="phone"
+                            android:maxLines="1"
+                            android:paddingStart="@dimen/space_8"
+                            android:paddingEnd="@dimen/space_16"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_16"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_phone"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+
+                    <TextView
+                        android:id="@+id/textViewAdd"
+                        android:layout_width="@dimen/space_150"
+                        android:layout_height="@dimen/space_40"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="@dimen/space_4"
+                        android:layout_marginBottom="@dimen/space_4"
+                        android:background="@drawable/curved_shape_orange_filled"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:gravity="center"
+                        android:padding="@dimen/space_4"
+                        android:text="@string/add"
+                        android:textAllCaps="true"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/text_size_18" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/skDialogLoader"
+            style="@style/SpinKitView.DoubleBounce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/space_8"
+            android:layout_marginBottom="@dimen/space_8"
+            android:padding="16dp"
+            android:visibility="gone"
+            app:SpinKit_Color="@color/purple"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

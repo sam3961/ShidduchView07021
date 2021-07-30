@@ -1,0 +1,996 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="shiddush.view.com.mmvsd.ui.signup.SignUpTwoViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        tools:context=".ui.signup.SignUpTwoFragment">
+
+        <ImageView
+            android:id="@+id/backImage"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:scaleType="fitXY"
+            android:src="@drawable/home_top"
+            app:layout_constraintBottom_toTopOf="@+id/topbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:layout_marginEnd="@dimen/space_8"
+            app:layout_constraintBottom_toTopOf="@+id/titlebottom"
+            app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/titletop">
+
+            <LinearLayout
+                android:id="@+id/backView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="87"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/backArrow"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_left_arrow_white"
+                    app:layout_constraintBottom_toTopOf="@+id/titlebottom"
+                    app:layout_constraintEnd_toStartOf="@+id/tvTitle"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/titletop" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="13"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:fontFamily="@font/avenirnextltpro_demi"
+                    android:text="@string/matching_questions"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_18" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/space_16"
+            app:layout_constraintBottom_toTopOf="@+id/titlebottom"
+            app:layout_constraintEnd_toStartOf="@+id/rightbar"
+            app:layout_constraintTop_toTopOf="@+id/hebrewtop">
+
+            <TextView
+                android:id="@+id/tv_hebru_text_t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_medium"
+                android:gravity="center"
+                android:text="@string/hebrew_t"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_25" />
+
+            <TextView
+                android:id="@+id/tv_hebru_quotes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_medium"
+                android:gravity="center"
+                android:text="@string/hebrew_quotes"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_25" />
+
+            <TextView
+                android:id="@+id/tv_hebru_text_dt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_medium"
+                android:gravity="center"
+                android:text="@string/hebrew_dt"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_25" />
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/botberbottom"
+            app:layout_constraintEnd_toStartOf="@+id/bottombarright"
+            app:layout_constraintStart_toStartOf="@+id/bottombarleft"
+            app:layout_constraintTop_toTopOf="@+id/botbertop">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/curved_shape_purple_border"
+                android:gravity="center_vertical"
+                app:layout_constraintEnd_toStartOf="@+id/botbarf1e"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/curved_shape_purple_filled"
+                android:gravity="center_vertical"
+                app:layout_constraintEnd_toStartOf="@+id/botbarf2e"
+                app:layout_constraintStart_toStartOf="@+id/botbarf2s" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/curved_shape_purple_border"
+                android:gravity="center_vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/botbarf3s" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/botbarf1e"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.30" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/botbarf2s"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.35" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/botbarf2e"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.65" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/botbarf3s"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.70" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/signup_layout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/buttonBottom"
+            app:layout_constraintEnd_toStartOf="@+id/rightbtn"
+            app:layout_constraintStart_toStartOf="@+id/leftbtn"
+            app:layout_constraintTop_toTopOf="@+id/buttontop">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/curved_gradient_purple">
+
+                <Button
+                    android:id="@+id/btnNext"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="@string/next"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_size_16" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="@dimen/space_25"
+                    android:layout_height="@dimen/space_25"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/space_20"
+                    android:indeterminate="true"
+                    android:theme="@style/WhiteProgressBarStyle"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/firstCardCon"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/swap_card_shadow_100"
+            app:layout_constraintBottom_toTopOf="@+id/firstcardbottom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/firstcardtop">
+
+            <TextView
+                android:id="@+id/tvFirstQuestion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/avenirnextltpro_demi"
+                android:gravity="start"
+                android:text="@string/which_do_you_associate"
+                android:textColor="@color/colorDarkGrayText"
+                android:textSize="@dimen/text_size_18"
+                app:layout_constraintEnd_toStartOf="@+id/fcrightbar"
+                app:layout_constraintStart_toStartOf="@+id/fcleftbar"
+                app:layout_constraintTop_toTopOf="@+id/fcttop" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/fcFirstOptCon"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/fcfirstbottom"
+                app:layout_constraintEnd_toStartOf="@+id/fcrightbar"
+                app:layout_constraintStart_toStartOf="@+id/fcleftbar"
+                app:layout_constraintTop_toTopOf="@+id/fcfirsttop"
+                tools:layout_editor_absoluteX="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/curved_shape_orange_border"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/mqOneFirstOption"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/space_1"
+                        android:layout_marginTop="@dimen/space_1"
+                        android:layout_marginBottom="@dimen/space_1"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingStart="@dimen/space_16">
+
+                        <TextView
+                            android:id="@+id/tvMqOneFFOption"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:gravity="center_vertical"
+                            android:paddingTop="@dimen/space_4"
+                            android:paddingBottom="@dimen/space_4"
+                            android:text="1."
+                            android:textColor="@color/colorDarkGrayText"
+                            android:textSize="@dimen/text_size_13" />
+
+                        <TextView
+                            android:id="@+id/tvMqOneFFTOption"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/tvMqOneFFOption"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/space_4"
+                            android:paddingTop="@dimen/space_4"
+                            android:paddingRight="@dimen/space_4"
+                            android:paddingBottom="@dimen/space_4"
+                            android:text="@string/keeping_kosher"
+                            android:textColor="@color/colorDarkGrayText"
+                            android:textSize="@dimen/text_size_13" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginTop="@dimen/space_2"
+                        android:layout_marginBottom="@dimen/space_2">
+
+                        <View
+                            android:layout_width="@dimen/space_1"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:background="@color/white" />
+
+                        <View
+                            android:id="@+id/fcFirstOptDivider"
+                            android:layout_width="@dimen/space_1"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/colorOrange" />
+
+                        <View
+                            android:layout_width="@dimen/space_1"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:background="@color/white" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/mqOneSecondOption"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/space_1"
+                        android:layout_marginRight="@dimen/space_1"
+                        android:layout_marginBottom="@dimen/space_1"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingRight="@dimen/space_16">
+
+                        <TextView
+                            android:id="@+id/tvMqTwoFFOption"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/space_16"
+                            android:paddingTop="@dimen/space_4"
+                            android:paddingBottom="@dimen/space_4"
+                            android:text="2."
+                            android:textColor="@color/colorDarkGrayText"
+                            android:textSize="@dimen/text_size_13" />
+
+                        <TextView
+                            android:id="@+id/tvMqTwoFFTOption"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/tvMqTwoFFOption"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/space_4"
+                            android:paddingTop="@dimen/space_4"
+                            android:paddingRight="@dimen/space_1"
+                            android:paddingBottom="@dimen/space_4"
+                            android:text="@string/not_keeping_kosher"
+                            android:textColor="@color/colorDarkGrayText"
+                            android:textSize="@dimen/text_size_13" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/fcSecondOptCon"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/fcsecondbottom"
+                app:layout_constraintEnd_toStartOf="@+id/fcrightbar"
+                app:layout_constraintStart_toStartOf="@+id/fcleftbar"
+                app:layout_constraintTop_toTopOf="@+id/fcsecondtop"
+                tools:layout_editor_absoluteX="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/curved_shape_orange_border"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/mqTwoFirstOption"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/space_1"
+                        android:layout_marginTop="@dimen/space_1"
+                        android:layout_marginBottom="@dimen/space_1"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/space_16">
+
+                        <TextView
+                            android:id="@+id/tvMqOneSSOption"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:gravity="center_vertical"
+                            android:paddingTop="@dimen/space_4"
+                            android:paddingBottom="@dimen/space_4"
+                            android:text="1."
+                            android:textColor="@color/colorDarkGrayText"
+                            android:textSize="@dimen/text_size_13" />
+
+                        <TextView
+                            android:id="@+id/tvMqOneSSTOption"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/tvMqOneSSOption"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/space_4"
+                            android:paddingTop="@dimen/space_4"
+                            android:paddingRight="@dimen/space_4"
+                            android:paddingBottom="@dimen/space_4"
+                            android:text="@string/keeping_shabbos"
+                            android:textColor="@color/colorDarkGrayText"
+                            android:textSize="@dimen/text_size_13" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginTop="@dimen/space_2"
+                        android:layout_marginBottom="@dimen/space_2">
+
+                        <View
+                            android:layout_width="@dimen/space_1"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:background="@color/white" />
+
+                        <View
+                            android:id="@+id/fcSecondOptDivider"
+                            android:layout_width="@dimen/space_1"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/colorOrange" />
+
+                        <View
+                            android:layout_width="@dimen/space_1"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:background="@color/white" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/mqTwoSecondOption"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/space_1"
+                        android:layout_marginRight="@dimen/space_1"
+                        android:layout_marginBottom="@dimen/space_1"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingRight="@dimen/space_16">
+
+                        <TextView
+                            android:id="@+id/tvMqTwoSSOption"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/space_16"
+                            android:paddingTop="@dimen/space_4"
+                            android:paddingBottom="@dimen/space_4"
+                            android:text="2."
+                            android:textColor="@color/colorDarkGrayText"
+                            android:textSize="@dimen/text_size_13" />
+
+                        <TextView
+                            android:id="@+id/tvMqTwoSSTOption"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/tvMqTwoSSOption"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/space_4"
+                            android:paddingTop="@dimen/space_4"
+                            android:paddingRight="@dimen/space_1"
+                            android:paddingBottom="@dimen/space_4"
+                            android:text="@string/not_keeping_shabbos"
+                            android:textColor="@color/colorDarkGrayText"
+                            android:textSize="@dimen/text_size_13" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/fcThirdOptCon"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/fcthirdbottom"
+                app:layout_constraintEnd_toStartOf="@+id/fcrightbar"
+                app:layout_constraintStart_toStartOf="@+id/fcleftbar"
+                app:layout_constraintTop_toTopOf="@+id/fcthirdtop"
+                tools:layout_editor_absoluteX="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/curved_shape_orange_border"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/mqThreeFirstOption"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/space_1"
+                        android:layout_marginTop="@dimen/space_1"
+                        android:layout_marginBottom="@dimen/space_1"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/space_16">
+
+                        <TextView
+                            android:id="@+id/tvMqOneTTOption"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:gravity="center_vertical"
+                            android:paddingTop="@dimen/space_4"
+                            android:paddingBottom="@dimen/space_4"
+                            android:text="1."
+                            android:textColor="@color/colorDarkGrayText"
+                            android:textSize="@dimen/text_size_13" />
+
+                        <TextView
+                            android:id="@+id/tvMqOneTTTOption"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/tvMqOneTTOption"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/space_4"
+                            android:paddingTop="@dimen/space_4"
+                            android:paddingRight="@dimen/space_4"
+                            android:paddingBottom="@dimen/space_4"
+                            android:text="@string/men_wearing_tefillin"
+                            android:textColor="@color/colorDarkGrayText"
+                            android:textSize="@dimen/text_size_13" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginTop="@dimen/space_2"
+                        android:layout_marginBottom="@dimen/space_2">
+
+                        <View
+                            android:layout_width="@dimen/space_1"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:background="@color/white" />
+
+                        <View
+                            android:id="@+id/fcThirdOptDivider"
+                            android:layout_width="@dimen/space_1"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/colorOrange" />
+
+                        <View
+                            android:layout_width="@dimen/space_1"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:background="@color/white" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/mqThreeSecondOption"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/space_1"
+                        android:layout_marginRight="@dimen/space_1"
+                        android:layout_marginBottom="@dimen/space_1"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingRight="@dimen/space_16">
+
+                        <TextView
+                            android:id="@+id/tvMqTwoTTOption"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/space_16"
+                            android:paddingTop="@dimen/space_4"
+                            android:paddingBottom="@dimen/space_4"
+                            android:text="2."
+                            android:textColor="@color/colorDarkGrayText"
+                            android:textSize="@dimen/text_size_13" />
+
+                        <TextView
+                            android:id="@+id/tvMqTwoTTTOption"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/tvMqTwoTTOption"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/space_4"
+                            android:paddingTop="@dimen/space_4"
+                            android:paddingRight="@dimen/space_1"
+                            android:paddingBottom="@dimen/space_4"
+                            android:text="@string/men_not_wearing_tefillin"
+                            android:textColor="@color/colorDarkGrayText"
+                            android:textSize="@dimen/text_size_13" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/fcleftbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.04" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/fcrightbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.96" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/fcttop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent=".05" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/fcfirsttop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent=".17" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/fcfirstbottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent=".40" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/fcsecondtop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent=".45" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/fcsecondbottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent=".68" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/fcthirdtop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent=".73" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/fcthirdbottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent=".95" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/secondCardCon"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/swap_card_shadow_80"
+            app:layout_constraintBottom_toTopOf="@+id/secondcardbottom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/firstcardbottom">
+
+            <TextView
+                android:id="@+id/tvForthQuestion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/avenirnextltpro_demi"
+                android:gravity="start"
+                android:text="@string/are_you_a_cohen"
+                android:textColor="@color/colorDarkGrayText"
+                android:textSize="@dimen/text_size_18"
+                app:layout_constraintEnd_toStartOf="@+id/scrightbar"
+                app:layout_constraintStart_toStartOf="@+id/scleftbar"
+                app:layout_constraintTop_toTopOf="@+id/scttop" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/scOptCon"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/scfirstbottom"
+                app:layout_constraintEnd_toStartOf="@+id/scrightbar"
+                app:layout_constraintStart_toStartOf="@+id/scleftbar"
+                app:layout_constraintTop_toTopOf="@+id/scfirsttop">
+
+
+                <TextView
+                    android:id="@+id/YesOption"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@drawable/curved_shape_orange_border"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:gravity="center"
+                    android:text="@string/yes_small"
+                    android:textColor="@color/colorDarkGrayText"
+                    android:textSize="@dimen/text_size_13"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/sccenterlefttbar"
+                    app:layout_constraintStart_toStartOf="@+id/scslefttbar"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/NoOption"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@drawable/curved_shape_orange_border"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:gravity="center"
+                    android:text="@string/no_small"
+                    android:textColor="@color/colorDarkGrayText"
+                    android:textSize="@dimen/text_size_13"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/scsrighttbar"
+                    app:layout_constraintStart_toStartOf="@+id/sccenterrighttbar"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/sccenterlefttbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.45" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/sccenterrighttbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.55" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/scslefttbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.18" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/scsrighttbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.83" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/scleftbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.04" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/scrightbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.96" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/scttop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent=".10" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/scfirsttop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent=".42" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/scfirstbottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent=".80" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/leftbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/rightbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="1" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/topbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.17" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/botberbottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.96" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/botbertop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.94" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/buttontop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".81" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/buttonBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.88" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/leftbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.14" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/rightbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.86" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/titletop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.03" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/titlebottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.10" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/bottombarleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.10" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/bottombarright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.90" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/firstcardtop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.16" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/firstcardbottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".56" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/secondcardbottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.74" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/hebrewtop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.02" />
+
+        <!--<ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:scaleType="fitXY"
+            android:alpha="0.5"
+            android:src="@drawable/new_user_male" />-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+
+
+    <!--
+
+app:autoSizeTextType="uniform"
+
+    -->

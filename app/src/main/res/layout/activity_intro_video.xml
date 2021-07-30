@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+
+
+
+
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutHText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_alignParentEnd="true"
+            >
+
+            <TextView
+                android:id="@+id/tv_hebru_text_t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_medium"
+                android:gravity="center"
+                android:text="@string/hebrew_t"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_25"/>
+
+            <TextView
+                android:id="@+id/tv_hebru_quotes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_medium"
+                android:gravity="center"
+                android:text="@string/hebrew_quotes"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_25" />
+
+            <TextView
+                android:id="@+id/tv_hebru_text_dt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_medium"
+                android:gravity="center"
+                android:text="@string/hebrew_dt"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_25" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:id="@+id/linearLayoutTop"
+            android:layout_below="@+id/linearLayoutHText"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/space_4"
+                android:fontFamily="@font/avenirnextltpro_demi"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="@string/don_t_close_the_app"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/space_18" />
+
+
+            <TextView
+                android:id="@+id/tvTimerEnds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/space_4"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:text="@string/searching_for_a_match"
+                android:textColor="@color/colorOrange"
+                android:textSize="@dimen/space_18" />
+
+
+
+            <ImageView
+                android:id="@+id/imageViewClock"
+                android:layout_width="@dimen/space_60"
+                android:layout_height="@dimen/space_60"
+
+                android:layout_marginTop="@dimen/space_8"
+                android:src="@drawable/sand_clock"/>
+
+            <TextView
+                android:id="@+id/tvTimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_8"
+                android:text="00"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:fontFamily="@font/avenirnextltpro_demi"
+                android:textSize="@dimen/text_size_22" />
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_125"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:background="@color/white">
+
+
+
+
+
+            <shiddush.view.com.mmvsd.utill.CustomViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                tools:context="MainActivity" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</layout>
+

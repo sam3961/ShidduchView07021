@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+    <!-- android:background="@android:color/transparent"-->
+
+    <RelativeLayout
+        android:id="@+id/rlBackLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/swap_card_shadow_20">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_16"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:id="@+id/relativelayout1"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/background"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="#303F9F" />
+
+                <ImageView
+                    android:id="@+id/imageViewCancel"
+                    android:layout_width="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_height="20dp"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/space_4"
+                    android:src="@drawable/ic_close" />
+
+                <ImageView
+                    android:id="@+id/closeCallDialog"
+                    android:layout_width="50dp"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativelayout1"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/space_4">
+
+                <TextView
+                    android:id="@+id/textTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/avenirnextltpro_bold"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:paddingHorizontal="12dp"
+                    android:text="Please help us solve the Shidduch Crisis!"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBackPurple"
+                    android:textSize="@dimen/text_size_20" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvMessage"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/textViewDonate"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginTop="@dimen/space_4"
+                        android:layout_marginBottom="@dimen/space_4"
+                        android:padding="@dimen/space_4"
+                        android:gravity="center"
+                        android:background="@drawable/curved_shape_purple_filled"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="@string/donate"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/text_size_18" />
+
+                    <TextView
+                        android:id="@+id/textViewAnotherTime"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/space_4"
+                        android:background="@drawable/curved_shape_orange_filled"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="@string/another_time_be_h"
+                        android:gravity="center"
+                        android:padding="@dimen/space_4"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_15" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

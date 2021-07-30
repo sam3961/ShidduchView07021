@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+
+    <View
+        android:layout_width="@dimen/space_6"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:background="@color/black"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/space_4"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="@dimen/space_4"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginTop="@dimen/space_6"
+                android:layout_marginEnd="@dimen/space_8"
+                android:src="@drawable/circle_shape_orange" />
+
+            <TextView
+                android:id="@+id/textViewNote1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:paddingEnd="@dimen/space_6"
+                android:text="@string/note_9"
+                android:textColor="@color/purple"
+                android:textSize="@dimen/text_size_15" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_20"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/space_4"
+            android:layout_marginEnd="@dimen/space_4"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginTop="@dimen/space_6"
+                android:layout_marginEnd="@dimen/space_8"
+                android:src="@drawable/circle_shape_orange" />
+
+            <TextView
+                android:id="@+id/textViewNote2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:text="@string/note_9"
+                android:paddingEnd="@dimen/space_6"
+                android:textColor="@color/purple"
+                android:textSize="@dimen/text_size_15" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="@dimen/space_6"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/view_right"
+        android:background="@color/black"/>
+
+</RelativeLayout>

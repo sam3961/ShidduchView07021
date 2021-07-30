@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/_20sdp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingEnd="@dimen/_20sdp"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:gravity="center"
+        android:lineSpacingExtra="@dimen/_2sdp"
+        android:layout_centerHorizontal="true"
+        android:text="Once Mathed"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/textViewSubTitle"
+        android:layout_below="@+id/textViewTitle"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:scaleType="centerInside" />
+
+    <TextView
+        android:id="@+id/textViewSubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:fontFamily="@font/montserrat_regular"
+        android:lineSpacingExtra="@dimen/_2sdp"
+        android:text="The more you questions your answer:
+        1. TheTheTheThe more accurate your match will be
+2.kmsmkdmksmdksmkdskmdksmdksmdk"
+        android:textColor="@android:color/white" />
+
+
+</RelativeLayout>

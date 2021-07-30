@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="chat"
+            type="shiddush.view.com.mmvsd.model.chat.Messages" />
+
+        <variable
+            name="viewModel"
+            type="shiddush.view.com.mmvsd.ui.chat.ChatViewModel" />
+    </data>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="end"
+    android:focusable="false"
+    android:id="@+id/rootLayout"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/relativeLayoutHeaderDate"
+        layout="@layout/item_view_header_date" />
+
+         <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/llRootLayout"
+            android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/llImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/outline_circle">
+
+            <ImageView
+                android:id="@+id/ivThumbnail"
+                android:layout_width="@dimen/_32sdp"
+                android:layout_height="@dimen/_32sdp"
+                android:padding="@dimen/_4sdp"
+                android:src="@drawable/ic_male" />
+
+        </LinearLayout>
+
+    <RelativeLayout
+      android:padding="@dimen/_8sdp"
+      android:background="@drawable/rounded_dark_gray"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+      <RelativeLayout
+          android:id="@+id/rlAttachment"
+          android:padding="@dimen/_8sdp"
+          android:background="@drawable/editext_rounded_4"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+          <ImageView
+              android:rotation="60"
+              android:layout_width="@dimen/_26sdp"
+              android:layout_height="@dimen/_30sdp"
+              android:src="@drawable/ic_attach"/>
+      </RelativeLayout>
+
+      <LinearLayout
+          android:layout_toStartOf="@+id/llDownload"
+          android:layout_marginStart="@dimen/_4sdp"
+          android:layout_marginEnd="@dimen/_4sdp"
+          android:layout_toEndOf="@+id/rlAttachment"
+          android:layout_width="match_parent"
+          android:orientation="vertical"
+          android:layout_height="wrap_content">
+          <TextView
+              android:id="@+id/tvFileName"
+              style="@style/TextViewCircularRegular"
+              android:text="Filename.pdf"
+              android:layout_marginTop="@dimen/_2sdp"
+              android:textColor="@android:color/black"
+              android:textSize="@dimen/_12ssp" />
+
+          <TextView
+              android:id="@+id/tvFileSize"
+              style="@style/TextViewCircularRegular"
+              android:maxLines="1"
+              android:visibility="gone"
+              android:layout_marginTop="@dimen/_2sdp"
+              android:text="2.2 Mb"
+              android:textColor="@android:color/darker_gray"
+              android:textSize="@dimen/_10sdp" />
+      </LinearLayout>
+
+
+      <LinearLayout
+          android:orientation="horizontal"
+          android:id="@+id/llDownload"
+          android:layout_alignParentEnd="true"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+
+          <RelativeLayout
+              android:background="@drawable/outline_grey"
+              android:layout_width="@dimen/_24sdp"
+              android:id="@+id/imageViewSeeDoc"
+              android:layout_height="@dimen/_24sdp">
+
+              <ImageView
+                  android:layout_width="@dimen/_16sdp"
+                  android:layout_height="@dimen/_16sdp"
+                  android:layout_centerVertical="true"
+                  android:layout_centerInParent="true"
+                  android:layout_gravity="center_vertical"
+                  android:src="@drawable/ic_eye" />
+          </RelativeLayout>
+
+
+
+          <RelativeLayout
+              android:layout_marginStart="@dimen/_10sdp"
+              android:background="@drawable/outline_grey"
+              android:id="@+id/imageViewDownloadDoc"
+              android:layout_width="@dimen/_24sdp"
+              android:layout_height="@dimen/_24sdp">
+              <ImageView
+                  android:layout_centerInParent="true"
+                  android:layout_gravity="center_vertical"
+                  android:layout_width="@dimen/_16sdp"
+                  android:layout_height="@dimen/_16sdp"
+                  android:src="@drawable/ic_downward"/>
+          </RelativeLayout>
+      </LinearLayout>
+  </RelativeLayout>
+
+
+</LinearLayout>
+    <TextView
+        android:id="@+id/tvLastMessageTime"
+        style="@style/TextViewCircularRegular"
+        android:layout_width="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="end"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:padding="@dimen/_4sdp"
+        android:textColor="@color/colorMediumGray"
+        android:textSize="@dimen/_9sdp" />
+
+</LinearLayout>
+
+</layout>

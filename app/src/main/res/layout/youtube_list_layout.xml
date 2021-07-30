@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="youtubeLinksData"
+            type="shiddush.view.com.mmvsd.model.waitingscreenmodels.YoutubeLinksData" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_2"
+        android:layout_marginEnd="@dimen/space_2"
+        android:layout_marginVertical="@dimen/_4sdp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/llYoutubeMain"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/space_2"
+                android:paddingEnd="@dimen/space_2"
+                android:paddingTop="@dimen/space_2"
+                android:paddingBottom="@dimen/space_2">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:id="@+id/frameLayout"
+                        android:layout_marginStart="@dimen/space_4"
+                        android:layout_marginEnd="@dimen/space_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+>
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/ivThumbnail"
+                        android:layout_width="@dimen/space_120"
+                        android:layout_height="@dimen/space_80"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/video_thumbnail"
+                        app:riv_corner_radius_bottom_left="@dimen/space_8"
+                        app:riv_corner_radius_bottom_right="@dimen/space_8"
+                        app:riv_corner_radius_top_left="@dimen/space_8"
+                        app:riv_corner_radius_top_right="@dimen/space_8" />
+
+                    <ImageView
+                        android:id="@+id/ivPlay"
+                        android:layout_width="@dimen/space_32"
+                        android:layout_height="@dimen/space_32"
+                        android:layout_gravity="center"
+                        android:src="@drawable/play_button" />
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/space_4"
+                        android:layout_below="@+id/frameLayout"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvtitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:gravity="center_vertical"
+                            android:text="Grooming"
+                            android:maxLength="14"
+                            android:maxLines="3"
+                            android:ellipsize="end"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_13" />
+
+                        <TextView
+                            android:id="@+id/tvSubtitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:gravity="center_vertical"
+                            android:text="Eva Nilson"
+                            android:maxLines="2"
+                            android:maxLength="20"
+                            android:ellipsize="end"
+                            android:textColor="@color/colorDarkGrayText"
+                            android:textSize="@dimen/text_size_11" />
+                    </LinearLayout>
+
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

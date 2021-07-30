@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="chat"
+            type="shiddush.view.com.mmvsd.model.chat.Messages" />
+
+        <variable
+            name="viewModel"
+            type="shiddush.view.com.mmvsd.ui.chat.ChatViewModel" />
+    </data>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false">
+
+        <include
+            android:id="@+id/relativeLayoutHeaderDate"
+            layout="@layout/item_view_header_date" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayoutHeaderDate"
+            android:layout_marginStart="@dimen/_40sdp"
+            android:focusable="false">
+
+
+            <TextView
+                android:id="@+id/tvMessage"
+                style="@style/TextViewCircularRegular"
+                android:layout_width="wrap_content"
+                android:background="@drawable/rounded_green_8"
+                android:padding="@dimen/_8sdp"
+                android:text="@{chat.message}"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_11ssp"
+                bind:layout_constraintEnd_toEndOf="parent"
+                bind:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/TextViewCircularRegular"
+                android:layout_width="wrap_content"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:padding="@dimen/_4sdp"
+                android:textColor="@color/colorMediumGray"
+                android:textSize="@dimen/_8sdp"
+                bind:layout_constraintEnd_toEndOf="parent"
+                bind:layout_constraintTop_toBottomOf="@+id/tvMessage" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/idMale"
+        android:title="@string/male"/>
+
+    <item
+        android:id="@+id/idFeMale"
+        android:title="@string/female"/>
+
+</menu>

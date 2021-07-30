@@ -1,0 +1,254 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'com.google.firebase.crashlytics'
+
+android {
+    compileSdkVersion 30
+    defaultConfig
+            {
+                applicationId "shiddush.view.com.mmvsd"
+                minSdkVersion 19
+                targetSdkVersion 29
+                multiDexEnabled true
+                versionCode 59
+                versionName "1.59"
+                testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+                maxSdkVersion 30
+                resConfigs "en", "US"
+
+            }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField "String", "BASE_URL", '"https://theaishadchan.com/api/live/"'
+            buildConfigField "String", "SOCKET_URL", '"http://35.182.146.136:5959"'
+            buildConfigField "String", "SCHEDULER_URL", '"http://99.79.51.31/"'
+            buildConfigField "String", "REFERRAL_URL", '"http://review.shidduchview.com/"'
+        }
+        debug {
+            signingConfig signingConfigs.debug
+            buildConfigField "String", "BASE_URL", '"https://theaishadchan.com/api/live/"'
+            buildConfigField "String", "SOCKET_URL", '"http://35.182.146.136:5959"'
+         //   buildConfigField "String", "BASE_URL", '"http://99.79.104.155:5952/api/live/"'
+           // buildConfigField "String", "SOCKET_URL", '"http://99.79.104.155:5959"'
+            buildConfigField "String", "SCHEDULER_URL", '"http://99.79.51.31/"'
+            buildConfigField "String", "REFERRAL_URL", '"http://review.shidduchview.com/"'
+        }
+        /*
+        alpha {
+            buildConfigField "String", "BASE_URL", '"https://meanstack.stagingsdei.com:5952/api/beta/"'
+            buildConfigField "String", "SOCKET_URL", '"http://54.71.18.74:5959"'
+            debuggable true
+        }*/
+    }
+
+    dataBinding {
+        enabled true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
+    }
+
+    dexOptions {
+        // Prevent OutOfMemory with MultiDex during the build phases
+        javaMaxHeapSize "4g"
+    }
+}
+
+
+dependencies {
+    //  https://github.com/apuder/Highlight
+
+    implementation project(path: ':highlight')
+    implementation project(path: ':showcaseviewlib')
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.3.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.vectordrawable:vectordrawable:1.1.0'
+
+    // ViewModel and LiveData
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation project(path: ':singledateandtimepicker')
+    implementation 'com.google.firebase:firebase-crashlytics:18.0.0'
+    implementation 'com.google.firebase:firebase-analytics:19.0.0'
+    implementation 'com.google.firebase:firebase-crashlytics-ndk:18.0.0'
+    //noinspection LifecycleAnnotationProcessorWithJava8
+    annotationProcessor 'androidx.lifecycle:lifecycle-compiler:2.3.1'
+
+    // Retrofit + GSON + Interceptor retrofit_version = 2.2.0
+    implementation 'com.squareup.retrofit2:retrofit:2.7.1'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.6.1'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.6.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.7.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.2.2'
+
+    // RX rxjava2_version: 2.0.1
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.12'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    implementation 'com.jakewharton.timber:timber:4.7.1'
+
+    //rx permission
+    implementation 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.5@aar'
+
+    //Facebook
+    implementation 'com.facebook.android:facebook-login:5.15.3'
+
+    //loader - SpinKit
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+
+    //firebase
+    implementation 'com.google.firebase:firebase-auth:21.0.1'
+    implementation 'com.google.firebase:firebase-messaging:22.0.0'
+
+    // FirebaseUI Auth library.
+    implementation "com.firebaseui:firebase-ui-auth:7.1.1"
+
+    //play service auth
+    implementation 'com.google.android.gms:play-services-auth:19.0.0'
+
+    //socket
+    implementation('com.github.nkzawa:socket.io-client:0.6.0', {
+        exclude group: 'org.json', module: 'json'
+    })
+
+    //youtube, picasso, cardview
+    implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.5'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation "com.yuyakaido.android:card-stack-view:2.3.4"
+
+    //Crashlytics
+
+    //TokBox / OpenTok
+    implementation 'com.opentok.android:opentok-android-sdk:2.19.0'
+    implementation 'com.android.volley:volley:1.2.0'
+    implementation 'pub.devrel:easypermissions:3.0.0'
+
+    //gson
+    implementation 'com.google.code.gson:gson:2.8.6'
+
+    //Google Play Account
+    //implementation 'com.google.apis:google-api-services-androidpublisher:v2-rev177-1.25.0'
+
+    // Google Play Billing Library.
+    implementation 'com.android.billingclient:billing:1.2'
+    //implementation 'com.google.api-client:google-api-client:1.30.7'
+
+    // ViewModel and LiveData extensions.
+    implementation 'android.arch.lifecycle:extensions:1.1.1'
+
+    // Java8 support for Lifecycles.
+    implementation 'android.arch.lifecycle:common-java8:1.1.1'
+
+    // Room Architecture Components.
+    implementation 'android.arch.persistence.room:runtime:1.1.1'
+
+    // Kotlin annotation processor for Room.
+    kapt 'android.arch.persistence.room:compiler:1.1.1'
+
+    //Text
+    implementation 'com.jaychang:simpletext:2.0.1'
+    implementation 'com.github.vihtarb:tooltip:0.2.0'
+
+    //BottomSheet
+    implementation 'com.github.mkhoiron:Actionsheet-android:0.1'
+
+    //test
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test:runner:1.3.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    implementation 'com.karumi:dexter:5.0.0'
+    implementation "com.google.android.gms:play-services-location:18.0.0"
+
+    //firebase anaylytics
+    implementation 'com.google.firebase:firebase-analytics:19.0.0'
+
+    //circular progress
+    implementation 'com.mikhaellopez:circularprogressbar:3.0.3'
+
+    //alerter
+    implementation 'com.tapadoo.android:alerter:5.1.2'
+
+    //country code picker
+    implementation('com.hbb20:ccp:2.2.4') {
+        exclude group: 'com.android.support'
+    }
+
+    //in app update
+    implementation 'com.google.android.play:core:1.7.3'
+
+    //smartlook analytics
+    implementation('com.smartlook.recording:app:1.5.0-native')
+
+    //cubic viewpager
+    implementation 'com.ToxicBakery.viewpager.transforms:view-pager-transforms:2.0.24'
+
+    //sdb
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+
+    //ssp
+    implementation 'com.intuit.ssp:ssp-android:1.0.6'
+
+    //branch.io
+    implementation 'com.google.firebase:firebase-appindexing:20.0.0'
+   // implementation 'com.google.android.gms:play-services-ads-identifier:16+'
+    // required for all Android apps
+    implementation 'io.branch.sdk.android:library:5.+'
+    // Chrome Tab matching (enables 100% guaranteed matching based on cookies)
+    implementation 'androidx.browser:browser:1.3.0'
+
+    //dots indicator
+    implementation 'com.tbuonomo.andrui:viewpagerdotsindicator:4.1.2'
+
+    //file picker
+    implementation 'com.github.HBiSoft:PickiT:0.1.14'
+
+    //firebase storage
+    implementation 'com.google.firebase:firebase-storage:20.0.0'
+
+    implementation 'com.google.firebase:firebase-storage-ktx:20.0.0'
+
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+
+    //Apphud
+//    implementation ('com.github.apphud:ApphudSDK-Android:0.3'){
+//        exclude group: 'com.android.billingclient', module: ''
+//    }
+
+    //file picker
+    implementation 'com.droidninja:filepicker:2.2.5'
+
+    //zoomimageview
+    implementation 'com.jsibbold:zoomage:1.3.1'
+
+    //android coroutines
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.1"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.1"
+
+    //keyboard visibility
+    implementation 'net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:3.0.0-RC3'
+
+    //outline textview
+    implementation 'com.github.iamBedant:OutlineTextView:1.0.5'
+
+}
+apply plugin: 'com.google.gms.google-services'

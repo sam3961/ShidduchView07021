@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:bind="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="shiddush.view.com.mmvsd.ui.chat.ChatViewModel" />
+        <variable
+            name="chat"
+            type="shiddush.view.com.mmvsd.model.chat.Messages" />
+    </data>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="false"
+    android:gravity="bottom">
+
+    <include
+        android:id="@+id/includeChatMessage"
+        bind:chat="@{chat}"
+        bind:viewModel="@{viewModel}"
+        layout="@layout/item_view_friend_message"
+        />
+
+
+
+</LinearLayout>
+
+</layout>

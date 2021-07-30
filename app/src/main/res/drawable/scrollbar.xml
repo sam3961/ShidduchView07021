@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/purple" />
+
+            <stroke
+                android:width="@dimen/space_1"
+                android:color="@color/white" />
+
+            <corners
+                android:bottomLeftRadius="60dp"
+                android:bottomRightRadius="60dp"
+                android:topLeftRadius="60dp"
+                android:topRightRadius="60dp" />
+        </shape>
+    </item>
+</selector>
+
+
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    &lt;!&ndash; solids that simulate shadow !&ndash;&gt;
+    <item>
+        <shape>
+            <corners android:radius="@dimen/space_60"/>
+            <solid android:color="#FFFFFF"/>
+            <padding android:top="1dp"
+                android:right="1dp"
+                android:bottom="1dp"
+                android:left="1dp"/>
+        </shape>
+    </item>
+
+    &lt;!&ndash;<item>
+        <shape>
+            <corners android:radius="@dimen/space_60"/>
+            <solid android:color="#FFFFFF"/>
+            <padding android:top="10dp"
+                android:right="10dp"
+                android:bottom="10dp"
+                android:left="10dp"/>
+        </shape>
+    </item>&ndash;&gt;
+
+    &lt;!&ndash; main background &ndash;&gt;
+    <item>
+        <shape>
+            <corners android:radius="@dimen/space_60"></corners>
+            <solid android:color="@color/colorPrimary"/>
+        </shape>
+    </item>
+
+
+</layer-list>-->
+
+
+
+
+    <!--
+
+    <?xml version="1.0" encoding="utf-8"?>
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <item>
+            <shape android:shape="rectangle">
+    <gradient
+    android:type="linear"
+    android:startColor="#7900CD"
+    android:endColor="#D699FF"
+    android:centerColor="#BB64F5"
+    android:angle="90"
+    android:gradientRadius="90"
+        />
+    <stroke android:color="#006400" android:width="0dp" />
+    <corners android:radius="60dp"/>
+        </shape>
+        </item>
+        </selector>
+
+    -->

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/viewHomeHints"
+    android:background="#A4000000">
+
+
+    <com.iambedant.text.OutlineTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Attend Events ->"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16ssp"
+        app:outlineColor="@color/colorDarkOrange"
+        app:outlineWidth="0.3"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:layout_marginHorizontal="@dimen/_12sdp"
+        android:fontFamily="@font/avenirnextltpro_demi"/>
+    <com.iambedant.text.OutlineTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Single\nGo on a Video Date"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_22ssp"
+        app:outlineColor="@color/colorDarkOrange"
+        app:outlineWidth="0.5"
+        android:layout_marginHorizontal="@dimen/_12sdp"
+        android:layout_marginVertical="@dimen/_40sdp"
+        android:fontFamily="@font/avenirnextltpro_demi"/>
+
+
+    <com.iambedant.text.OutlineTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Or Reach out Directly ->"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16ssp"
+        app:outlineColor="@color/colorDarkOrange"
+        app:outlineWidth="0.3"
+        android:layout_marginHorizontal="@dimen/_12sdp"
+        android:fontFamily="@font/avenirnextltpro_demi"/>
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <color name="colorPrimary">#7802D2</color>
+    <color name="colorPrimaryDark">#3F3F3F</color>
+    <color name="colorAccent">#F99D14</color>
+    <color name="colorOrange">#F99D14</color>
+    <color name="colorDarkOrange">#FF7C00</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorError">#FFCF1013</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorDarkGray">#686868</color>
+    <color name="colorDarkGrayText">#464646</color>
+    <color name="colorLightGrayText">#4f4f4f</color>
+    <color name="colorGrayHint">#898989</color>
+    <color name="colorDarkX">#909090</color>
+    <color name="colorLightGray">#c4c4c4</color>
+    <color name="colorLightGrayXX">#dddddd</color>
+    <color name="colorLightGrayXXX">#f3f3f3</color>
+    <color name="colorLightBlackXXX">#9F000000</color>
+    <color name="chat_time_color">#B1B2B1</color>
+    <color name="colorLightBlack">#262626</color>
+    <color name="colorRed">#FF1D20</color>
+    <color name="colorRedLight">#E54E41</color>
+    <color name="colorBlue">#1c8ccc</color>
+    <color name="colorLightGrayX">#F5F5F5</color>
+    <color name="trans_success_stroke_color">#33A5DC86</color>
+    <color name="menu_item_1">#1677A1</color>
+    <color name="colorLightYellow">#FFFFE0</color>
+    <color name="color_Tab_unselected">#CCFFFFFF</color>
+    <color name="colorE">#c4c4c4</color>
+    <color name="colorGreen">#22c064</color>
+    <color name="black">#000000</color>
+    <color name="blackShade">#181717</color>
+    <color name="white">#FFFF</color>
+    <color name="gray">#cccccc</color>
+    <color name="tool_tip_gray">#E2E1E1</color>
+    <color name="dark_gray">#E0E0E0</color>
+    <color name="darkest_gray">#989899</color>
+    <color name="transparent">#00000000</color>
+    <color name="purple">#3F006C</color>
+    <color name="purple_bar">#7900CE</color>
+    <color name="purple_bottom_bar">#7601C6</color>
+    <color name="shadow_color">#e1a9fe</color>
+    <color name="text_purple">#4C0181</color>
+    <color name="dot_purple">#440074</color>
+    <color name="hebrew_purple">#7802D1</color>
+    <color name="purple_call_back">#DA6500B1</color>
+    <color name="brownFaint">#836A7F</color>
+    <color name="blackFaint">#3D3A3F</color>
+    <color name="blackTextFaint">#5D5D5D</color>
+    <!--<color name="hebrew_purple">#440074</color>-->
+    <color name="transparent_gray">#9C424040</color>
+
+
+    <color name="facebook">#518EF8</color>
+    <color name="google">#FBBB00</color>
+    <color name="back_bar">#3CC1ACFF</color>
+
+    <!--app subscription-->
+    <color name="primaryColor">#4285f4</color>
+    <color name="primaryLightColor">#80b4ff</color>
+    <color name="primaryDarkColor">#0059c1</color>
+    <color name="secondaryColor">#ff9800</color>
+    <color name="secondaryLightColor">#ffc947</color>
+    <color name="secondaryDarkColor">#c66900</color>
+    <color name="primaryTextColor">#000000</color>
+    <color name="secondaryTextColor">#000000</color>
+    <color name="colorBackPurple">#55118C</color>
+    <color name="colorMediumGray">#A7A8AA</color>
+    <color name="colorLighterGray">#F2F2F2</color>
+
+</resources>
+
